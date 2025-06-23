@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="flex justify-center flex-col items-center m-10">
+        <div class="shadow-lg bg-blue-50 p-6 rounded-md">
+            <h3 class=" text-2xl text-center">Enter Your Details</h3>
+            <form action="">
+                <label class="mt-8 text-base mb-2" for="form1">First Name</label> <br>
+                <input class="border  pl-3 mb-2 rounded-lg h-10 mt-1 w-[400px] border-gray-600 " type="text" id="form1"
+                    placeholder="Enter first name"><br>
+                <label class="mt-8 text-base mb-2" for="form2">Last Name</label> <br>
+                <input class="border  pl-3 mb-2 rounded-lg h-10 mt-1 w-[400px] border-gray-600 " type="text" id="form2"
+                    placeholder="Enter last name"><br>
+                <label class="mt-8 text-base mb-2" for="form3">Age</label> <br>
+                <input class="border  pl-3 mb-2 rounded-lg h-10 mt-1 w-[400px] border-gray-600 " type="number"
+                    placeholder="Enter age" id="form3"><br>
+                <label class="mt-8 text-base mb-2" for="form4">Gender</label> <br>
+                <select class="border pl-3 mb-2 rounded-lg h-10 mt-1 w-[400px]  border-gray-600 " name="gender"
+                    id="form4">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select><br>
+                <input type="button" value="Submit" onclick="myfunction()" id="form5"
+                    class="hover:bg-red-400 rounded-lg p-2 bg-red-200 w-full ">
+
+            </form>
+        
+        </div>
+            <div class=" bg-red-200  mt-2 " id="details ">
+                <table class="table-auto border-collapse">
+                    <thead class="[&_th]:border [&_th]:border-gray-400 [&_th]:px-[60px]">
+                        <tr >
+                            <th> Name</th>
+                            <th>age</th>
+                            <th>Gender</th>
+                        </tr>
+                    </thead>
+                    <tbody class="[&_td]:border [&_td]:border-gray-400 [&_td]:px-[60px] " id="tbody">
+                        
+                    </tbody>
+
+
+                </table>
+            </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
